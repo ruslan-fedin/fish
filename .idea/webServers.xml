@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="37f53a0c-7a4d-407a-8ae4-0539e047f129" name="http://im.loc:8888 (1)" url="http://im.loc:8888/">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>http://im.loc:8888</name>
+        <servers>
+          <name value="http://im.loc:8888 (1)" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>
