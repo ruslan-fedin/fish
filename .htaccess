@@ -1,0 +1,26 @@
+# PHP по умолчанию он умеет экранировать симболы с запроса \'http://shop.loc/test'\
+# чтобы отключить такое повидение мы вставим значение Off для данного директива magic_quotes_gpc
+# А на разных серверах она может быть включена или выключена [ php_flag magic_quotes_gpc Off ]
+php_flag magic_quotes_gpc Off
+
+
+# Установка кодмровка
+# мы горим серверу какая кодировка обработает данные
+AddDefaultCharset utf-8
+
+# Мы говоим Apache ты ищи только файл index.php
+# потому что сервер по умолчанию ищить index.php, index.html, public ... index.htm ..ит.д
+DirectoryIndex index.php
+
+
+# Mode rewrite
+RewriteEngine on
+
+# Rules
+# Если то что у нас запросил пользователь не является файлом и папка
+RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+
+
+# То перенаправить пользователь на файл index.php ближающий корни нашего сайта
+RewriteRule ^(.*) index.php

@@ -9,16 +9,16 @@ require_once 'core/base/settings/internal_setting.php';
 require_once 'libraries/function.php';
 
 use core\base\controller\RouteController;
-use core\base\exceptions\RoteException;
-
+use core\base\exceptions\RouteException;
 
 
 try {
  RouteController::getInstance()->route();
 }
-catch (RoteException $e){
+catch (RouteException $e){
     exit($e->getMessage());
 }
+
 
 
 //phpinfo();
