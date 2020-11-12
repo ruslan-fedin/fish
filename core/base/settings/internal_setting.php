@@ -21,12 +21,12 @@ const USER_CSS_JS = [
     'scripts' => []
 ];
 
-use core\base\exceptions\RoteException;
+use core\base\exceptions\RouteException;
 
 function autoloadMainClasses($class_name){
     $class_name = str_replace('\\','/',$class_name);
     if (!@include_once $class_name . '.php') {
-        throw new RoteException('неверное имя файла для подключения - '.$class_name);
+        throw new RouteException('неверное имя файла для подключения - '.$class_name);
     }
 }
 

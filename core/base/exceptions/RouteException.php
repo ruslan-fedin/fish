@@ -4,7 +4,7 @@
 namespace core\base\exceptions;
 
 
-class RoteException extends \Exception
+class RouteException extends \Exception
 {
 
 }
