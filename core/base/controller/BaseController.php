@@ -68,6 +68,61 @@ abstract class BaseController
 
     public function request($args)
     {
-        
+
+        $this->parameters = $args['parameters'];
+
+        $inputData  = $args['inputMethod'];
+        $outputData = $args['outputMethod'];
+
+
+        // $this->{$inputMethod}();
+        // call_user_func([$this, $inputData]);
+        $this->$inputData();
+
+
+        // Сохраняем результат обработки выполнения выходного метода в переменную $page
+        // это будет результат $page
+        // $this->page = $this->{$outputMethod}();
+        // call_user_func([$this, $outputData]);
+        $this->page = $this->$outputData();
+
+        // если в ошибке что то есть
+        if($this->errors)
+        {
+            $this->writeLog();
+        }
+
+        // Get Page [ Пулучаем страничку
+        $this->getPage();
+    }
+
+    protected function render($path = '', $parameters = [])
+    {
+        extract($parameters);
+
+        if(!$path)
+        {
+            $reflectedClass = new \ReflectionClass($this);
+            $path = TEMPLATE . explode('controller', strtolower($reflectedClass->getShortName()))[0];
+        }
+
+        // Открываем буфер обмена
+        ob_start();
+
+        if(!@include_once $path . '.php')
+        {
+            throw new RouteException('Отсутствует шаблон - ' . $path);
+        }
+
+        // получаем из буфер то что там хранился
+        return ob_get_clean();
+
+    }
+
+
+    // Завершаем выполнения скрипта и при этом показываем страницу
+    protected function getPage() // terminate
+    {
+        exit($this->page);
     }
 }

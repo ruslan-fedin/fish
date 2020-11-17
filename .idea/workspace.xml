@@ -9,27 +9,29 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:less08" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:less10" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f2b7b82-22b8-4efc-8cb7-52e2e253da95" name="Default Changelist" comment="less 07">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/base/controller/BaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/user/controller/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/public_html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/public_html.iml" afterDir="false" />
+    <list default="true" id="9f2b7b82-22b8-4efc-8cb7-52e2e253da95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/default/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/base/controller/RouteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/controller/RouteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/base/exceptions/RoteException.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/exceptions/RouteException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/base/settings/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/settings/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/base/settings/internal_setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/settings/internal_setting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/base/controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/base/controller/BaseController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,23 +123,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="less08" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="less 07" />
@@ -216,10 +207,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="432" y="194" key="NewPhpClassDialog/0.23.1440.877@0.23.1440.877" timestamp="1605190480554" />
-    <state x="539" y="392" key="NewPhpFileDialog" timestamp="1605193707749">
+    <state x="539" y="392" key="NewPhpFileDialog" timestamp="1605607469154">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="539" y="392" key="NewPhpFileDialog/0.23.1440.877@0.23.1440.877" timestamp="1605193707749" />
+    <state x="539" y="392" key="NewPhpFileDialog/0.23.1440.877@0.23.1440.877" timestamp="1605607469154" />
     <state x="535" y="205" width="777" height="320" key="PhpMappingAdvancedResolveDialog" timestamp="1604860226994">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -228,6 +219,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604866238199" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1605450848798">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1605450848798" />
     <state x="100" y="123" width="1240" height="677" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605177359458">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -236,9 +231,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="260" y="197" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877@0.23.1440.877" timestamp="1605176864498" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1605190656726">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1605452038656">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1605190656726" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1605452038656" />
   </component>
 </project>
